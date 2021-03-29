@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="0.263">
+<testcase classname="Register and send mail" name="user should Regiter" time="0.017">
+<system-out><![CDATA[Given user navigates to login page..........................................passed
+When user clicks on singup..................................................passed
+And user enter Firstname "qwe1" and Lastname "asd1".........................passed
+And user enter Mail "qwe1@asd.com" and User "qwe1"..........................passed
+And user enter Password "qwe1" and ConfPasswd "qwe1"........................passed
+And click on register button................................................passed
+Then user should view confirmation message "Dear qwe1 asd1, Your personal settings have been registered.".passed
+And click on user dropdown..................................................passed
+Then validate the user "qwe1 asd1" and mail "qwe1@asd.com"..................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Register and send mail" name="user sends an email" time="0.004">
+<system-out><![CDATA[Given user logins and click on compose button...............................passed
+When user enter Id "qwe@asd.com"............................................passed
+And user enter Subject "Hi for Testing" and Desc "Hello qwe, \n  \\t This is for Testing, \n\n From \n qwe ".passed
+And click on send...........................................................passed
+Then validate the acknowledgement "The message has been sent to qwe asd (qwe)".passed
+]]></system-out>
+</testcase>
+</testsuite>

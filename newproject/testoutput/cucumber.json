@@ -1,0 +1,296 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-29T07:54:21.451Z",
+        "line": 7,
+        "name": "user should Regiter",
+        "description": "",
+        "id": "register-and-send-mail;user-should-regiter",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user navigates to login page",
+            "match": {
+              "location": "StepDefinition.Steps.user_navigates_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on singup",
+            "match": {
+              "location": "StepDefinition.Steps.user_clicks_on_singup()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enter Firstname \"qwe1\" and Lastname \"asd1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qwe1\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"asd1\"",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefinition.Steps.user_enter_firstname_and_lastname(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enter Mail \"qwe1@asd.com\" and User \"qwe1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qwe1@asd.com\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"qwe1\"",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinition.Steps.user_enter_mail_and_user(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enter Password \"qwe1\" and ConfPasswd \"qwe1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qwe1\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"qwe1\"",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefinition.Steps.user_enter_password_and_conf_passwd(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "click on register button",
+            "match": {
+              "location": "StepDefinition.Steps.click_on_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user should view confirmation message \"Dear qwe1 asd1, Your personal settings have been registered.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dear qwe1 asd1, Your personal settings have been registered.\"",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinition.Steps.user_should_view_confirmation_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click on user dropdown",
+            "match": {
+              "location": "StepDefinition.Steps.click_on_user_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "validate the user \"qwe1 asd1\" and mail \"qwe1@asd.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qwe1 asd1\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"qwe1@asd.com\"",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefinition.Steps.validate_the_user_and_mail(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "close browser",
+            "match": {
+              "location": "StepDefinition.Steps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-29T07:54:21.488Z",
+        "line": 20,
+        "name": "user sends an email",
+        "description": "",
+        "id": "register-and-send-mail;user-sends-an-email",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user logins and click on compose button",
+            "match": {
+              "location": "StepDefinition.Steps.user_logins_and_click_on_compose_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user enter Id \"qwe@asd.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qwe@asd.com\"",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinition.Steps.user_enter_id(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user enter Subject \"Hi for Testing\" and Desc \"Hello qwe, \\n  \\\\t This is for Testing, \\n\\n From \\n qwe \"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hi for Testing\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Hello qwe, \\n  \\\\t This is for Testing, \\n\\n From \\n qwe \"",
+                  "offset": 45
+                }
+              ],
+              "location": "StepDefinition.Steps.user_enter_subject_and_desc(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "click on send",
+            "match": {
+              "location": "StepDefinition.Steps.click_on_send()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "validate the acknowledgement \"The message has been sent to qwe asd (qwe)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The message has been sent to qwe asd (qwe)\"",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinition.Steps.validate_the_acknowledgement(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@sendmail"
+          }
+        ]
+      }
+    ],
+    "name": "Register and send mail",
+    "description": "1. register\n2. send mail",
+    "id": "register-and-send-mail",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFile/File.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
