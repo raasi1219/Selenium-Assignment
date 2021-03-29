@@ -69,12 +69,12 @@ public class Steps {
 	public void click_on_register_button() throws InterruptedException {
 		// Write code here that turns the phrase above into concrete actions
 		
-		// driver.findElement(By.id("registration_submit")).click();
+		 driver.findElement(By.id("registration_submit")).click();
 		 Thread.sleep(3000);
-		driver.get("http://elearningm1.upskills.in/main/admin/index.php");
+	/*	driver.get("http://elearningm1.upskills.in/main/admin/index.php");
 		driver.findElement(By.id("formLogin_login")).sendKeys("qwe1");
 		driver.findElement(By.id("formLogin_password")).sendKeys("qwe1");
-		driver.findElement(By.xpath("//*[@id=\"formLogin_submitAuth\"]")).click(); 
+		driver.findElement(By.xpath("//*[@id=\"formLogin_submitAuth\"]")).click(); */
 		
 		
 	}
@@ -83,9 +83,8 @@ public class Steps {
 	public void user_should_view_confirmation_message(String string) throws InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
 	    
-		// String Expected = driver.findElement(By.id("//*[@id=\"cm-content\"]/div/div[2]/div/p[1]")).getText();
-		String Expected = "Dear qwe1 asd1, Your personal settings have been registered.";
-	    
+		 String Expected = driver.findElement(By.id("//*[@id=\"cm-content\"]/div/div[2]/div/p[1]")).getText();
+
 		System.out.println(string);
 		System.out.println(Expected);
 		
